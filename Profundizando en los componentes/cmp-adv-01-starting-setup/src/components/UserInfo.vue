@@ -1,11 +1,13 @@
 <template>
   <section>
     <base-card>
-    <div>
+    <template v-slot:header> <!--  sirve para el otro slot llamado header en la plantilla BaseCard-->
       <h3>{{ fullName }}</h3>
       <base-badge :type="role" :caption="role.toUpperCase()"></base-badge>
-    </div>
+    </template>
+    <template v-slot:default>
     <p>{{ infoText }}</p>
+    </template>
     </base-card>
   </section>
 
@@ -19,7 +21,11 @@ export default {
 <!-- Estilos solo para este componente -->
 <style scoped>
 
-
+section header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
 
 </style>

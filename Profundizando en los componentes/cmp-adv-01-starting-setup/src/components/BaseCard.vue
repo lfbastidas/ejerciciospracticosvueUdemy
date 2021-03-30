@@ -1,16 +1,17 @@
+<!-- los slots sirven para envolver un contenido html dinamico -->
+
 <template>
     <div>
+        <header>
+        <slot name="header"> </slot>    
+            
+        </header>
         <slot> </slot>
         
-         </div>
+    </div>
 </template>
 
-<script>
-export default {
- 
-}
-</script>
- 
+
 
 <style  scoped>
 div{
@@ -20,4 +21,12 @@ div{
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
   padding: 1rem;
 }
+
+
+ header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 </style>
