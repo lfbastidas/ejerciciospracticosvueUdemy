@@ -33,7 +33,7 @@ export default {
   },
 };
 </script>
-
+<!-- Aqui defino los estilos q usara la aplicacion a nivel global -->
 <style>
 html {
   font-family: sans-serif;
