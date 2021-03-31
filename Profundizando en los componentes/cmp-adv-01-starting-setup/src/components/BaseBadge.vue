@@ -15,7 +15,7 @@ export default {
   },
 };
 </script>
-
+<!-- Estilos solo para este componente -->
 <style scoped>
 .badge {
   display: inline-block;

@@ -3,7 +3,7 @@
     <h1>More on Vue Components</h1>
   </header>
 </template>
-
+<!-- Estilos solo para este componente -->
 <style scoped>
   header {
     width: 100%;
