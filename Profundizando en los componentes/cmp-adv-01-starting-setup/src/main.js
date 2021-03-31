@@ -9,7 +9,8 @@ const app = createApp(App);
 
 
 app.component('base-badge', BaseBadge);
-app.component('base-card', BaseCard)
+app.component('base-card', BaseCard);
+
 
 
 app.mount('#app');
