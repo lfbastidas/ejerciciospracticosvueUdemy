@@ -3,6 +3,7 @@
    <learning-resource
    v-for="obj in resources" 
    :key="obj.id"
+   :id="obj.id"
    :tittle="obj.tittle"
    :description="obj.description"
    :link="obj.link"
